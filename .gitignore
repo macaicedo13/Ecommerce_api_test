@@ -1,0 +1,46 @@
+# --- Seguridad y Docker ---
+.docker/
+db_data/
+*.env.local
+*.env.*.local
+.env
+.env.local.php
+
+# --- Archivos del Sistema y Editores ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Backend (Symfony) ---
+backend/vendor/
+backend/var/
+backend/config/jwt/*
+!backend/config/jwt/*.pub
+backend/public/bundles/
+backend/public/build/
+backend/phpunit.xml
+backend/.phpunit.cache/
+
+# --- Frontend (React/Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.eslintcache
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+
+# --- Antigravity / Agentic ---
+.gemini/
+brain/
+*.webp
+*.png
+task.md
+walkthrough.md
+implementation_plan.md

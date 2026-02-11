@@ -1,0 +1,21 @@
+PHPUnit 11.5.53 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.2.12
+
+........                                                            8 / 8 (100%)
+
+Time: 00:00.014, Memory: 8.00 MB
+
+Order (App\Tests\Entity\Order)
+ ✔ Order creation
+ ✔ Calculate totals
+ ✔ Can be modified
+ ✔ Can be checked out
+
+Product (App\Tests\Entity\Product)
+ ✔ Product creation
+ ✔ Decrease stock
+ ✔ Decrease stock throws exception on insufficient stock
+ ✔ Has stock
+
+OK (8 tests, 26 assertions)

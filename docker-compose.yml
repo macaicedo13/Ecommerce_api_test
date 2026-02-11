@@ -1,0 +1,57 @@
+services:
+  # MySQL Database
+  db:
+    image: mysql:8.0
+    container_name: phptest_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: order_management
+      MYSQL_USER: symfony
+      MYSQL_PASSWORD: symfony
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - phptest_network
+
+  # PHP Backend (Symfony)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: phptest_backend
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./backend:/var/www/html
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    networks:
+      - phptest_network
+    environment:
+      DATABASE_URL: "mysql://symfony:symfony@db:3306/order_management?serverVersion=8.0"
+
+  # React Frontend (Vite)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: phptest_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    networks:
+      - phptest_network
+    depends_on:
+      - backend
+
+networks:
+  phptest_network:
+    driver: bridge
+
+volumes:
+  db_data:

@@ -1,0 +1,22 @@
+nelmio_api_doc:
+    areas:
+        default:
+            path_patterns:
+                - ^/api(?!/doc$) # Document all /api routes except the doc itself
+    documentation:
+        info:
+            title: Order & Payment Management API
+            description: API totalmente documentada con controladores personalizados
+            version: 1.0.0
+        components:
+            securitySchemes:
+                CustomerHeader:
+                    type: apiKey
+                    in: header
+                    name: X-Customer-Id
+                AdminHeader:
+                    type: apiKey
+                    in: header
+                    name: X-Role
+    models:
+        use_jms: false
