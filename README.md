@@ -94,7 +94,7 @@ Una vez que los contenedores estén corriendo, podrás acceder a:
 
 - **Frontend**: [http://localhost:3000](http://localhost:3000)
 - **Backend (API)**: [http://localhost:8000](http://localhost:8000)
-- **Documentación Swagger**: [http://localhost:8000/api/docs](http://localhost:8000/api/docs)
+- **Documentación Swagger**: [http://localhost:8000/api/doc](http://localhost:8000/api/doc)
 - **Postman Collection**: Localizada en `backend/docs/postman_collection.json`
 
 ---
