@@ -34,7 +34,7 @@ El sistema utiliza una **autenticación simulada** basada en roles. No necesitas
 
 ### 👤 Como Cliente (Customer)
 1. Ve a la pantalla de Login.
-2. Ingresa un ID (ej: `ludiott` o `cliente1`).
+2. Ingresa un ID (ej: `customer123` o `cliente1`).
 3. Selecciona el rol **Customer**.
 4. **Acciones**: Podrás ver productos, añadirlos al carrito y realizar pedidos. En "Mis Pedidos" verás solo tu historial.
 
@@ -68,8 +68,8 @@ El proyecto está completamente dockerizado para facilitar su despliegue en cual
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone <url-del-repositorio>
-   cd phpTest
+   git clone https://github.com/macaicedo13/Ecommerce_api_test.git
+   cd Ecommerce_api_test
    ```
 
 2. **Levantar los contenedores**:
