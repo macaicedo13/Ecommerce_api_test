@@ -29,7 +29,7 @@ Para un detalle profundo de las tablas, relaciones y reglas de negocio, consulta
 
 ## 📖 Documentación Interactiva
 Puedes explorar y probar todos los endpoints desde la interfaz de Swagger:
-[http://localhost:8000/api/docs](http://localhost:8000/api/docs)
+[http://localhost:8000/api/doc](http://localhost:8000/api/doc)
 
 ### 🧪 Pruebas y Lógica
 Para aprender a ejecutar los tests unitarios y validar la lógica de negocio:

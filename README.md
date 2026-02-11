@@ -97,6 +97,14 @@ Una vez que los contenedores estén corriendo, podrás acceder a:
 - **Documentación Swagger**: [http://localhost:8000/api/doc](http://localhost:8000/api/doc)
 - **Postman Collection**: Localizada en `backend/docs/postman_collection.json`
 
+### 🗄️ Acceso a la Base de Datos (Opcional)
+Si quieres conectar una herramienta externa (como DBeaver o TablePlus):
+- **Host**: `127.0.0.1`
+- **Puerto**: `3307`
+- **Usuario**: `symfony`
+- **Password**: `symfony`
+- **Base de datos**: `order_management`
+
 ---
 
 ## 📂 Estructura del Proyecto
