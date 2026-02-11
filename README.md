@@ -81,6 +81,7 @@ El proyecto está completamente dockerizado para facilitar su despliegue en cual
 3. **Inicializar la base de datos (Primera vez)**:
    Ejecuta las migraciones de Symfony para crear las tablas y cargar datos de prueba:
    ```bash
+   docker exec -it phptest_backend composer install
    docker exec -it phptest_backend php bin/console doctrine:migrations:migrate --no-interaction
    docker exec -it phptest_backend php bin/console doctrine:fixtures:load --no-interaction
    ```

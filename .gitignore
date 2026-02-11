@@ -3,7 +3,6 @@
 db_data/
 *.env.local
 *.env.*.local
-.env
 .env.local.php
 
 # --- Archivos del Sistema y Editores ---
